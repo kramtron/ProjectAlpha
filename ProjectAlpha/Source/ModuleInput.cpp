@@ -4,9 +4,6 @@
 #include "Application.h"
 #include "ModuleFadeToBlack.h"
 #include "ModulePlayer.h"
-#include "SceneLevel1.h"
-#include "level2.h"
-#include "ModuleBOSS.h"
 
 #include "SDL/include/SDL.h"
 
@@ -51,128 +48,10 @@ bool ModuleInput::Init()
 
 UpdateResult ModuleInput::PreUpdate()
 {
-	// Read new SDL events, mostly from the window
-	SDL_Event event;
-	if (SDL_PollEvent(&event))
-	{
-		if (event.type == SDL_QUIT || keys[SDL_SCANCODE_ESCAPE] == KeyState::KEY_REPEAT || App->input->pads->l1)	return UpdateResult::UPDATE_STOP;
-	}
-
-	// Read all keyboard data and update our custom array
-	SDL_PumpEvents();
-	const Uint8* keyboard = SDL_GetKeyboardState(NULL);
-	for (int i = 0; i < MAX_KEYS; ++i)
-	{
-		if (keyboard[i])
-			keys[i] = (keys[i] == KeyState::KEY_IDLE) ? KeyState::KEY_DOWN : KeyState::KEY_REPEAT;
-		else
-			keys[i] = (keys[i] == KeyState::KEY_REPEAT || keys[i] == KeyState::KEY_DOWN) ? KeyState::KEY_UP : KeyState::KEY_IDLE;
-	}
-	if (pads->left_x < 0.0f) {
-		keys[SDL_SCANCODE_A] = KeyState::KEY_REPEAT;
-	}
-	if (pads->left_x > 0.0f) {
-		keys[SDL_SCANCODE_D] = KeyState::KEY_REPEAT;
-	}
-	if (pads->left_y < 0.0f) {
-		keys[SDL_SCANCODE_W] = KeyState::KEY_REPEAT;
-	}
-	if (pads->left_y > 0.0f) {
-		keys[SDL_SCANCODE_S] = KeyState::KEY_REPEAT;
-	}
-	if (pads->x) {
-		keys[SDL_SCANCODE_LEFT] = KeyState::KEY_REPEAT;
-	}
-	if (pads->a) {
-		keys[SDL_SCANCODE_DOWN] = KeyState::KEY_REPEAT;
-	}
-	if (pads->b) {
-		keys[SDL_SCANCODE_RIGHT] = KeyState::KEY_REPEAT;
-	}
-	if (pads->y) {
-		keys[SDL_SCANCODE_UP] = KeyState::KEY_REPEAT;
-	}
-	if (pads->left) {
-		keys[SDL_SCANCODE_A] = KeyState::KEY_REPEAT;
-	}
-	if (pads->down) {
-		keys[SDL_SCANCODE_S] = KeyState::KEY_REPEAT;
-	}
-	if (pads->right) {
-		keys[SDL_SCANCODE_D] = KeyState::KEY_REPEAT;
-	}
-	if (pads->up) {
-		keys[SDL_SCANCODE_W] = KeyState::KEY_REPEAT;
-	}
-	// Read new SDL events
-
-	while (SDL_PollEvent(&event) != 0)
-	{
-		switch (event.type)
-		{
-		case(SDL_CONTROLLERDEVICEADDED):
-		{
-			HandleDeviceConnection(event.cdevice.which);
-			break;
-		}
-		case(SDL_CONTROLLERDEVICEREMOVED):
-		{
-			HandleDeviceRemoval(event.cdevice.which);
-			break;
-		}
-		case(SDL_QUIT):
-		{
-			return UpdateResult::UPDATE_STOP;
-			break;
-		}
-		}
-	}
-
-	UpdateGamepadsInput();
-
-	if (App->input->keys[SDL_SCANCODE_P] == KeyState::KEY_DOWN) {
-		App->pause = !App->pause;
-		
-	}
-
-	if (App->pause)
-	{
-		if (App->input->keys[SDL_SCANCODE_SPACE] == KeyState::KEY_REPEAT || App->input->pads->a == KeyState::KEY_DOWN)
-		{
-			App->pause = !App->pause;
-			if(App->sceneLevel_1->lvl1 = true)
-			{
-				App->sceneLevel_1->levelcont = 0;
-				App->fade->FadeToBlack((Module*)App->sceneLevel_1, (Module*)App->sceneSwap, 20);
-			}
-			if(App->sceneLevel2->lvl2 = true)
-			{
-				App->boss->Disable();
-				App->sceneLevel_1->levelcont = 0;
-				App->fade->FadeToBlack((Module*)App->sceneLevel2, (Module*)App->sceneSwap, 20);
-				App->sceneLevel2->Disable();
-
-			}
-			App->player->vides = 5;
-			App->player->score = 0;
-		}
-
-		if (App->input->keys[SDL_SCANCODE_BACKSPACE] == KeyState::KEY_REPEAT)
-		{
-			App->pause = !App->pause;
-			App->fade->FadeToBlack((Module*)App->sceneLevel_1, (Module*)App->sceneIntro, 20 || App->input->pads->a == KeyState::KEY_DOWN);
-			App->player->vides = 5;
-			App->player->score = 0;
-		}
-		
-		if (App->input->keys[SDL_SCANCODE_RETURN] == KeyState::KEY_REPEAT)
-		{
-			return UpdateResult::UPDATE_STOP;
-		}
-	}
+	
 	return UpdateResult::UPDATE_CONTINUE;
-}
 
+}
 bool ModuleInput::CleanUp()
 {
 	LOG("Quitting SDL input event subsystem");
@@ -192,30 +71,6 @@ bool ModuleInput::CleanUp()
 	SDL_QuitSubSystem(SDL_INIT_GAMECONTROLLER);
 	SDL_QuitSubSystem(SDL_INIT_EVENTS);
 	return true;
-}
-
-void ModuleInput::HandleDeviceConnection(int index)
-{
-	if (SDL_IsGameController(index))
-	{
-		for (int i = 0; i < MAX_PADS; ++i)
-		{
-			GamePad& pad = pads[i];
-
-			if (pad.enabled == false)
-			{
-				if (pad.controller = SDL_GameControllerOpen(index))
-				{
-					LOG("Found a gamepad with id %i named %s", i, SDL_GameControllerName(pad.controller));
-					pad.enabled = true;
-					pad.left_dz = pad.right_dz = 0.1f;
-					pad.haptic = SDL_HapticOpen(index);
-					if (pad.haptic != nullptr) LOG("... gamepad has force feedback capabilities");
-					pad.index = SDL_JoystickInstanceID(SDL_GameControllerGetJoystick(pad.controller));
-				}
-			}
-		}
-	}
 }
 
 void ModuleInput::HandleDeviceRemoval(int index)

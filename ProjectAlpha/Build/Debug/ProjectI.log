@@ -1,170 +1,38 @@
 ﻿  Application.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  Enemy_BrownShip.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(96,22): warning C4244: '+=': conversión de 'double' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(105,22): warning C4244: '-=': conversión de 'double' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(118,22): warning C4244: '+=': conversión de 'double' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(127,22): warning C4244: '-=': conversión de 'double' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(164,22): warning C4244: '-=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(166,22): warning C4244: '-=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(178,22): warning C4244: '+=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(180,22): warning C4244: '+=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(192,22): warning C4244: '-=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(194,22): warning C4244: '+=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(206,22): warning C4244: '+=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_BrownShip.cpp(208,22): warning C4244: '-=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-  Enemy_Mech.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  Enemy_RedBird.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(90,22): warning C4244: '+=': conversión de 'double' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(99,22): warning C4244: '-=': conversión de 'double' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(112,22): warning C4244: '+=': conversión de 'double' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(121,22): warning C4244: '-=': conversión de 'double' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(159,23): warning C4244: '-=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(161,23): warning C4244: '-=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(173,23): warning C4244: '+=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(175,23): warning C4244: '+=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(187,23): warning C4244: '-=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(189,23): warning C4244: '+=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(201,23): warning C4244: '+=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Enemy_RedBird.cpp(203,23): warning C4244: '-=': conversión de 'float' a 'TYPE'; posible pérdida de datos
-          with
-          [
-              TYPE=int
-          ]
-  Enemy_Turret2.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  ModuleBOSS.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  ModuleEnemies.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\ModuleEnemies.cpp(48,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Enemy.cpp
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  Main.cpp
+  ModuleAudio.cpp
+  ModuleCollisions.cpp
+  ModuleFadeToBlack.cpp
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\ModuleFadeToBlack.cpp(81,19): warning C4244: '=': conversión de 'float' a 'Uint32'; posible pérdida de datos
   ModuleInput.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   ModuleParticles.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   ModulePlayer.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  SceneIntroGame.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  SceneLevel1.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\SceneLevel1.cpp(114,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+  ModuleRender.cpp
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\ModuleRender.cpp(114,31): warning C4244: '*=': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\ModuleRender.cpp(115,31): warning C4244: '*=': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\ModuleRender.cpp(145,34): warning C4244: '*=': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\ModuleRender.cpp(146,34): warning C4244: '*=': conversión de 'float' a 'int'; posible pérdida de datos
+  ModuleTextures.cpp
+  ModuleWindow.cpp
+  ScenePongGame.cpp
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   SceneSwap.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   SceneWin.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-  level2.cpp
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
-D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Source\level2.cpp(105,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(60,19): warning C4244: 'inicializando': conversión de 'float' a 'int'; posible pérdida de datos
+U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Source\Animation.h(61,58): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
   Generando código...
-  ProjectI.vcxproj -> D:\Proyecto Primero de carrera\KinderBoys\Super Smash Tv\Build\Debug\ProjectI.exe
+  ProjectI.vcxproj -> U:\ProyectoVerano\ProjectAlpha\ProjectAlpha\Build\Debug\ProjectI.exe

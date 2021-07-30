@@ -6,11 +6,9 @@
 #include "ModuleAudio.h"
 #include "ModuleInput.h"
 #include "ModulePlayer.h"
-#include "ModuleEnemies.h"
 #include "ModuleCollisions.h"
 #include "ModuleFadeToBlack.h"
 #include "ModuleParticles.h"
-#include "ModuleBOSS.h"
 
 SceneWin::SceneWin(bool startEnabled) : Module(startEnabled)
 {
@@ -29,53 +27,14 @@ bool SceneWin::Start()
 
 	bool ret = true;
 
-	bgTexture = App->textures->Load("Assets/SpritesSSTV/Score_screen_2.png");
-	fontTexture = App->textures->Load("Assets/SpritesSSTV/Font.png");
-
-	//App->audio->PlayMusic("Assets/Audio/SFX/End point count.wav", 1.0f);
-	App->audio->PlayMusic("Assets/Music/06-_Super_Smash_TV_-_Win_Game.ogg", 1.0f);
-	Win = App->audio->LoadFx("Assets/Audio/SFX/End point count 2.wav");
-
-	diners = 0;
-
-	App->audio->PlayFx(Win);
-
-	App->render->camera.x = 0;
-	App->render->camera.y = 0;
 	
-	App->player->CleanUp();
-	App->collisions->CleanUp();
-	App->particles->CleanUp();
-
-	App->enemies->Disable();
-	App->boss->Disable();
-
 
 	return ret;
 }
 
 UpdateResult SceneWin::Update()
 {
-	GamePad& pad = App->input->pads[0];
-
-	if (App->input->keys[SDL_SCANCODE_SPACE] == KeyState::KEY_DOWN || pad.a == KeyState::KEY_DOWN)
-	{
-		App->fade->FadeToBlack(this, (Module*)App->sceneIntro, 20);
-	}
-
-	//Suma diners
-	if (diners < App->player->money && diners + 3 < App->player->money)
-		diners += 3; //velocitat de pujada de diners, 3 està bé
-	else if (diners < App->player->money)
-		diners++;
-
-	//Gestió Array de la font
-	dinerscopia = diners;
-
-	for (int i = 0; i < 7; ++i) {
-		arrdiners[i] = dinerscopia % 10;
-		dinerscopia /= 10;
-	}
+	
 
 	return UpdateResult::UPDATE_CONTINUE;
 }

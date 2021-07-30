@@ -6,19 +6,13 @@
 #include "ModuleTextures.h"
 #include "ModuleAudio.h"
 #include "ModulePlayer.h"
-#include "SceneIntro.h"
-#include "SceneUPC.h"
-#include "SceneIntroGame.h"
-#include "SceneLevel1.h"
-#include "level2.h"
 #include "SceneWin.h"
 #include "SceneSwap.h"
 #include "ModuleParticles.h"
-#include "ModuleEnemies.h"
 #include "ModuleCollisions.h"
 #include "ModuleFadeToBlack.h"
 #include "ModuleRender.h"
-#include "ModuleBOSS.h"
+#include "ScenePongGame.h"
 
 Application::Application()
 {
@@ -31,13 +25,10 @@ Application::Application()
 	modules[2] =	textures =		new ModuleTextures(true);
 	modules[3] =	audio =			new ModuleAudio(true);
 
-	modules[4] =	sceneIntro =	new SceneIntro(true);
-	modules[5] =	sceneUPC =		new SceneUPC(false);
-	modules[6] =	sceneIntroGame =new SceneIntroGame(false);
-	modules[7] =	sceneLevel_1 =	new SceneLevel1(false);		//Gameplay scene starts disabled
-	modules[8] =	sceneLevel2 =	new SceneLevel2(false);		//Gameplay scene starts disabled
-	modules[9] =	sceneWin =		new SceneWin(false);		//Gameplay scene starts disabled
-	modules[10] =	sceneSwap =		new SceneSwap(false);		//Gameplay scene starts disabled
+	modules[4] = pong = new ScenePongGame(true);
+
+	modules[5] =	sceneWin =		new SceneWin(false);		//Gameplay scene starts disabled
+	modules[6] =	sceneSwap =		new SceneSwap(false);		//Gameplay scene starts disabled
 	
 	//L'ORDRE D'SPRITES NO ÉS CORRECTE (Original)
 	//modules[6] =	player =		new ModulePlayer(false);	//Player starts disabled
@@ -45,15 +36,13 @@ Application::Application()
 	//modules[8] =	enemies =		new ModuleEnemies(false);	//Enemies start disabled
 	
 	//PLAYER HA D'ESTAR PER SOBRE DE ENEMIES (pels sprites de portes), i PARTICLES (ha d'estar necessariament per sobre dels 2, sinó dona problemes)
-	modules[11] = enemies = new ModuleEnemies(false);	//Enemies start disabled
-	modules[12] = player = new ModulePlayer(false);		//PLayer start disabled
-	modules[13] = boss = new ModuleBOSS(false);
-	modules[14] = particles = new ModuleParticles(false);
+	modules[7] = player = new ModulePlayer(false);		//PLayer start disabled
+	modules[8] = particles = new ModuleParticles(false);
 
-	modules[15] =	collisions =	new ModuleCollisions(true);
-	modules[16] =	fade =			new ModuleFadeToBlack(true);
+	modules[9] =	collisions =	new ModuleCollisions(true);
+	modules[10] =	fade =			new ModuleFadeToBlack(true);
 
-	modules[17] =	render =		new ModuleRender(true);
+	modules[11] =	render =		new ModuleRender(true);
 }
 
 Application::~Application()
