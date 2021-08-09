@@ -1,0 +1,4 @@
+Para hacer el rebote de pelota correctamente se tiene que invertir el movimiento de pixel por frame de los ejes x,y.
+Ademas es buena idea para añadir dificultad al juego poner un random que modifique por poco el movimiento de pixels 
+por frame de alguno de los 2 ejes segun el sitio donde colisione la pelota la trayectoria de la pelota
+"se tiene que hacer con cuidado para no crear inestabilidad en el juego y que sea amorfo darle a la pelota".
